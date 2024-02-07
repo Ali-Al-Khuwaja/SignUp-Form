@@ -8,36 +8,46 @@
     <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
     <script  src="mainScript.js" defer></script>
     <link rel="icon" type="image/png" href="icons8-form-96.png">
+    <!-- Google fonts down here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
     <div>
+        <img src="alexandre-guimont-S9miGKjxmb4-unsplash.jpg" alt=" aside background photo for the form`" class="aside-bg">
+        <div class="logo-over-bg">
+            <img src="icons8-wpforms-96.png" alt="form logo" >
+            <p><strong>FAKE FORM</strong></p>
+        </div>
+        <div class="text-over-bg">
+            <div><a target="_blank" href="https://icons8.com/icon/YO4RiDJnySyG/wpforms">WPForms and </a><a target="_blank" href="https://icons8.com/icon/aRrUyfRx3SYb/fill-in-form">Form</a> icons by <a target="_blank" href="https://icons8.com">Icons8</a></div>
+            <p>Photo by <a href="https://unsplash.com/@guimz_visuals?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Alexandre Guimont</a> on <a href="https://unsplash.com/photos/shallow-focus-photography-of-green-spruce-tree-S9miGKjxmb4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+        </div>
+    </div>
+    <div id="form-container"> <!-- remember,only one id per page -->
         <header>
-            <h1>Example from</h1>
-            <p>This is not a real online service! you know you will need something like this form in your life to help you realize your deepest dreams. <br><br> You know you want to make one </p>
+            <h1>Basic Florist Form Example </h1>
+            <p>This is not a real online service! this is a test , the goal of this test is knowing if you understood what you have learned about the basic form styling and validation<br><br> You know you want to make one .</p>
         </header>
         <form action="#" method="post">
             <p>Let's do it </p>
-            <label for="first-name">FIRST NAME</label>
-            <input type="text" id="first-name" placeholder="Enter name here" name="Name">
-            <label for="last-name">LAST NAME</label>
-            <input type="text" id="last-name" placeholder="Enter last name here" name="Name">
-            <label for="email">EMAIL</label>
-            <input type="email" id="email" placeholder="Enter email here" name="email">
-            <label for="phone-number">PHONE NUMBER</label>
-            <input type="tel" id="phone-number" placeholder="Enter phone number here" name="phone-number">
-            <label for="password">PASSWORD</label>
-            <input type="password" id="password" placeholder="Enter password here" name="password">
-            <label for="conform-password">CONFORM PASSWORD</label>
-            <input type="password" id="conform-password" placeholder="Repeat password here" name="repeat-password">
-            <button>Create Account</button>
-            <p>already have an account ? <em>login</em></p>
-
+            <div class="align">
+                <div class="firstCol">
+                    <label for="first-name">FIRST NAME<input type="text" id="first-name" placeholder="Enter name here" name="Name" class="white-bg" minlength="3" maxlength="25" required></label>
+                    <label for="last-name">LAST NAME <input type="text" id="last-name" placeholder="Enter last name here" name="Name" class="white-bg" minlength="3" maxlength="25" required></label>
+                    <label for="email">EMAIL ACCOUNT<input type="email" id="email" placeholder="Enter email here" name="email" class="white-bg" required></label>
+                </div>
+                <div class="secondCol">
+                    <label for="phone-number">PHONE NUMBER<input type="tel" id="phone-number" placeholder="Enter phone number here" name="phone-number" class="white-bg"></label>
+                    <label for="password">PASSWORD<input type="password" id="password" placeholder="Enter password here" name="password" class="white-bg" minlength="8" maxlength="50" required></label>
+                    <label for="conform-password">CONFORM PASSWORD<input type="password" id="conform-password" placeholder="Repeat password here" name="repeat-password" class="white-bg" maxlength="50" required></label>
+                </div>
+            </div>
+            <br>
+            <button type="submit">SignUp</button>
+            <p>already have an account ? <a href="#" class="green-text">login</a></p>
         </form>
     </div>
-    <div>
-        <img src="alexandre-guimont-S9miGKjxmb4-unsplash.jpg" alt=" aside background photo for the form`">
-        <p></p>
-    </div>
-    
 </body>
 </html>
